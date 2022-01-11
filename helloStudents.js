@@ -3,12 +3,12 @@
 const students = require('./students.json');
 
 students.forEach( student => {
-    console.log(`Hello ${student.firstName} ${student.lastName}`)
+    console.log(`Hello ${student.firstName} ${student.lastName}`);
 });
 
 let chars = students.filter( item => {
     return item.lastName[0] === "D";
-})
+});
 
 console.log(`Count of last names starting with D is ${chars.length}`);
 
